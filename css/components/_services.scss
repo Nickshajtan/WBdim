@@ -1,0 +1,53 @@
+.container-fluid.pageBlock{
+    a.itemBlock{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0 40px 20px 40px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+                align-items: flex-start;
+        img{
+            height: 200px;
+            width: auto;
+            -o-object-fit: contain;
+            object-fit: contain;
+        }
+        h2{
+            font-size: ( $middle - 0.5rem );
+            color: $hgreen;
+            line-height: $standart;
+            font-weight: 700;
+        }
+        p{
+            font-size: ( $smaller + 0.1rem );
+            color: darken($grey, 30%);
+            line-height: $standart;
+            font-weight: 600;
+        }
+        &:hover,&:focus, &:active{
+            border-radius: 10px;
+            -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    }
+}
+.BirdsList{
+    list-style: none;
+    li{
+        color: $green;
+        line-height: $standart;
+        font-size: ($smaller + 0.3rem);
+        &:before{
+            content: url(../img/build-6-min.png);
+            margin-right: 8px;
+        }
+    }
+}

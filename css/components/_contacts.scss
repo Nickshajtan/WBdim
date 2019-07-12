@@ -1,0 +1,144 @@
+.col-12.map__wrapper{
+    padding: 0;
+    #map p{
+       margin-bottom: 0; 
+    }
+}
+.main__container .pageBlock.contactFeild .pageBlockHeader{
+    padding-bottom: 0;
+    height: 70px;
+    h3{
+        border-bottom: 1px solid $green;
+    }
+}
+.contactInfo{
+    a, span.marks{
+        font-size: $smaller_plus;
+        color: $hgreen;
+        text-decoration: none;
+    }
+    img{
+            height: 55px;
+            width: auto;
+            -webkit-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+            -o-object-fit: contain;
+            object-fit: contain;
+            transform: rotate(15deg);
+            padding: 5px;
+            border-radius: 100px;
+            border: 1px solid $green;
+            margin-right: 15px;
+            &.contact__image{
+            width: 100%;
+            height: auto;
+            }
+    }
+    p{
+        padding-bottom: 8px;
+    }
+    p.days{
+        font-size: ($smaller_plus - 0.3rem);
+        color: $green;
+    }
+    p.time{
+        font-style: italic;
+        color: $green;
+        font-size: ($smaller + 0.3rem);
+        font-weight: 600;
+        padding-left: 10px;
+    }
+    
+    
+}
+img.clock{
+            height: 200px;
+            position: relative;
+            top: -25px;
+    }
+.section__form{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    img{
+        height: 360px;
+        width: auto;
+        display: block;
+        float: right;
+        margin-top: 50px;
+        border: 1px solid $green;
+        -o-object-fit: contain;
+            object-fit: contain;
+    }
+    label{
+        font-size: ( $smaller + 0.1rem);
+        color: $green;
+    }
+    .btn{
+        background-color: $green;
+        color: $white;
+        font-size: ( $smaller + 0.1rem);
+        margin-top: 30px;
+        &:focus{
+            border-color: $hgreen;
+            box-shadow: none;
+        -webkit-box-shadow: none;
+            opacity: .9;
+        }  
+    }
+    .form-control:focus{
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border-color: $green;
+    }
+}
+@media screen and (max-width:1024px){
+    .section__form img{
+            max-width: 100%;
+    }
+}
+@media screen and (max-width:980px){
+    .contactInfo span.marks{
+        font-size:(  $smaller + 0.3rem);
+    }
+}
+@media screen and (max-width: 760px){
+    .schedule{
+        font-size: ( $smaller + 0.3rem );
+        border-bottom: 1px solid $green;
+        padding-top: 30px;
+    }
+    .contact__list p{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    .time__work{
+        text-align: center;
+    }
+    .contact__image img{
+        height: auto;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .contactInfo a{  
+             font-size: ( $smaller + 0.3rem );   
+     }
+    .contactInfo span.marks{
+        font-size: $smaller;
+    }
+     .contactInfo img{
+            height: 35px;
+     }
+}
+
+@media screen and (max-width: 380px){
+    .contact__list p{
+        width: 90%;
+    }    
+}
+@media screen and (max-width: 330px){
+    .contact__list p{
+        width: 100%;
+    }
+}

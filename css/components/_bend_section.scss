@@ -1,0 +1,35 @@
+.pageBlock .pageBlockSection{
+    overflow-y: hidden;
+    min-height: 520px;
+    margin-bottom: 0;
+    .pageBlockHeader{
+        height: 120px;
+        padding-bottom: 50px;
+        margin-top: 30px;
+        span{
+            font-size: $middle; 
+            height: 50px;
+        }
+    }
+    .blockText p{ 
+        padding: 0 30px 0 30px;
+        line-height: $standart;
+        font-size: $smaller;
+    }
+}
+@media screen and (max-width: 1024px){
+    .pageBlock .pageBlockSection {
+        padding-bottom: 30px;    
+        .pageBlockHeader span{
+            height: auto;
+            text-align: center;
+            min-height: 50px;
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .pageBlock .pageBlockSection{
+            min-height: 120px;
+            padding-top: 30px;
+    }
+}

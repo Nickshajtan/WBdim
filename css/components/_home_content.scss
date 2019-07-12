@@ -1,0 +1,16 @@
+#content{
+    position: relative;
+    z-index: 200;
+    background-color: $white;
+    margin-top: 100vh;
+}
+@media screen and (max-width: 1024px) and (min-height: 800px){
+    #content{
+        margin-top: 600px;
+    }
+}
+@media screen and (max-width: 760px){
+    #content{
+        margin-top: 100vh;
+    }
+}
